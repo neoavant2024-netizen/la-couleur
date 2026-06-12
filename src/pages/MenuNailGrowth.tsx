@@ -30,9 +30,9 @@ export default function MenuNailGrowth() {
               </p>
 
               <div className="bg-[#edecf1] rounded-2xl p-8">
-                <h3 className="text-xl text-stone-700 font-bold mb-4 font-serif">ヌング育成法とは</h3>
+                <h3 className="text-xl text-stone-700 font-bold mb-4 font-serif">メディカルプランナーとは</h3>
                 <p>
-                  ヌング育成法は、爪の成長メカニズムに基づいた科学的なアプローチで、自爪を健康的に育てる技術です。爪の形状・厚み・強度を改善し、割れにくく美しい爪を育てます。
+                  メディカルプランナーとは、ヌング育成法を用いた爪の成長メカニズムに基づいた科学的なアプローチで、爪を健康的に育てる技術です。爪の形状、厚み、強度を改善し、割れにくく美しい爪を育てます。
                 </p>
               </div>
 
