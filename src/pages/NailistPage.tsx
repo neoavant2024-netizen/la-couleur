@@ -28,15 +28,18 @@ export default function NailistPage() {
 
             {/* Name & Title */}
             <div className="text-center mb-16">
-              <div className="w-48 h-48 md:w-64 md:h-64 mx-auto mb-8 rounded-full overflow-hidden shadow-xl border-4 border-stone-100">
-                <img src="/images/nailist-profile.png" alt="久佐野 可奈子" className="w-full h-full object-cover object-top" />
+              <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto mb-8">
+                <div className="photo-ring absolute -inset-[6px] rounded-full" />
+                <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                  <img src="/images/nailist-profile.png" alt="久佐野 可奈子" className="w-full h-full object-cover object-top" />
+                </div>
               </div>
               <p className="text-[#b58aa0] text-sm tracking-[0.3em] mb-3">OWNER NAILIST</p>
               <h2 className="text-3xl md:text-5xl text-stone-700 font-bold font-serif mb-4 heading-3d">久佐野 可奈子</h2>
               <p className="text-stone-400 text-lg">Kanako Kusano</p>
               <div className="flex flex-wrap justify-center gap-3 mt-6">
                 {["メディカルネイルプランナー", "JNAネイリスト検定1級", "ネイルサロン衛生管理士"].map((q) => (
-                  <span key={q} className="px-4 py-2 rounded-full bg-[#edecf1] border border-stone-200 text-stone-500 text-sm">{q}</span>
+                  <span key={q} className="px-4 py-2 rounded-full bg-[#f5e6ec] border border-[#e6c7d2] text-[#9c6f81] text-sm">{q}</span>
                 ))}
               </div>
             </div>
@@ -62,10 +65,15 @@ export default function NailistPage() {
 
             {/* Career Timeline */}
             <div className="mb-16">
-              <h3 className="text-2xl text-stone-700 font-bold font-serif mb-8 text-center">経歴</h3>
+              <h3 className="text-2xl text-stone-700 font-bold font-serif mb-3 text-center">経歴</h3>
+              <div className="flex items-center justify-center gap-2 mb-8">
+                <span className="block h-px w-10 bg-gradient-to-l from-[#d59ab0] to-transparent" />
+                <span className="block w-1.5 h-1.5 rotate-45 bg-[#d59ab0]" />
+                <span className="block h-px w-10 bg-gradient-to-r from-[#d59ab0] to-transparent" />
+              </div>
               <div className="relative">
                 {/* Timeline line */}
-                <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gray-200 md:-translate-x-px" />
+                <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#e9c6cf] via-[#cdb4d4] to-[#f0dcae] md:-translate-x-px" />
 
                 {[
                   { year: "2004年", event: "ローズネイルスクール卒業", detail: "ローズネイル就職。店長、スクール講師、専門学校非常勤講師を経験" },
@@ -84,9 +92,9 @@ export default function NailistPage() {
                     className={`relative pl-12 md:pl-0 pb-10 ${i % 2 === 0 ? "md:pr-[55%]" : "md:pl-[55%]"}`}
                   >
                     {/* Dot */}
-                    <div className="absolute left-2.5 md:left-1/2 top-1 w-3 h-3 rounded-full bg-gray-400 border-2 border-white md:-translate-x-1.5 shadow-sm" />
+                    <div className="absolute left-2.5 md:left-1/2 top-1 w-3 h-3 rounded-full dot-pulse border-2 border-white md:-translate-x-1.5" />
                     <div className={`bg-white rounded-2xl p-6 border border-stone-100 shadow-sm ${i % 2 === 0 ? "md:text-right" : ""}`}>
-                      <span className="text-stone-300 text-sm font-medium">{item.year}</span>
+                      <span className="text-[#b58aa0] text-sm font-bold">{item.year}</span>
                       <h4 className="text-lg text-stone-700 font-bold mt-1 font-serif">{item.event}</h4>
                       <p className="text-stone-400 text-sm mt-2 leading-relaxed">{item.detail}</p>
                     </div>
@@ -97,7 +105,12 @@ export default function NailistPage() {
 
             {/* Qualifications */}
             <div className="mb-16">
-              <h3 className="text-2xl text-stone-700 font-bold font-serif mb-8 text-center">保有資格</h3>
+              <h3 className="text-2xl text-stone-700 font-bold font-serif mb-3 text-center">保有資格</h3>
+              <div className="flex items-center justify-center gap-2 mb-8">
+                <span className="block h-px w-10 bg-gradient-to-l from-[#d59ab0] to-transparent" />
+                <span className="block w-1.5 h-1.5 rotate-45 bg-[#d59ab0]" />
+                <span className="block h-px w-10 bg-gradient-to-r from-[#d59ab0] to-transparent" />
+              </div>
               <div className="grid md:grid-cols-3 gap-4">
                 {[
                   { title: "JNAネイリスト検定1級", desc: "ネイル技術の最高峰資格" },
@@ -110,8 +123,15 @@ export default function NailistPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: i * 0.1 }}
-                    className="p-6 rounded-2xl bg-[#edecf1] border border-stone-100 text-center"
+                    className="relative overflow-hidden p-6 pt-7 rounded-2xl bg-white border border-[#ecd6de] text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
                   >
+                    <motion.span
+                      className="absolute top-0 left-0 right-0 h-1 origin-left bg-gradient-to-r from-[#e9c6cf] via-[#cdb4d4] to-[#f0dcae]"
+                      initial={{ scaleX: 0 }}
+                      whileInView={{ scaleX: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 + i * 0.1 }}
+                    />
                     <h4 className="text-base text-stone-700 font-bold mb-2">{q.title}</h4>
                     <p className="text-stone-400 text-sm">{q.desc}</p>
                   </motion.div>
@@ -121,7 +141,12 @@ export default function NailistPage() {
 
             {/* Values */}
             <div className="mb-16">
-              <h3 className="text-2xl text-stone-700 font-bold font-serif mb-8 text-center">大切にしていること</h3>
+              <h3 className="text-2xl text-stone-700 font-bold font-serif mb-3 text-center">大切にしていること</h3>
+              <div className="flex items-center justify-center gap-2 mb-8">
+                <span className="block h-px w-10 bg-gradient-to-l from-[#d59ab0] to-transparent" />
+                <span className="block w-1.5 h-1.5 rotate-45 bg-[#d59ab0]" />
+                <span className="block h-px w-10 bg-gradient-to-r from-[#d59ab0] to-transparent" />
+              </div>
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   { title: "一人ひとりに寄り添う施術", desc: "お客様の爪の状態やライフスタイルに合わせて、最適な施術プランをご提案します。マニュアル通りではない、あなただけのケアをご提供します。" },
@@ -135,9 +160,16 @@ export default function NailistPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: i * 0.1 }}
-                    className="p-8 rounded-2xl border border-stone-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                    className="group relative overflow-hidden p-8 pl-9 rounded-2xl bg-white border border-stone-100 hover:border-[#e6c7d2] hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
                   >
-                    <h4 className="text-lg text-stone-700 font-bold mb-3 font-serif">{v.title}</h4>
+                    <motion.span
+                      className="absolute left-0 top-0 bottom-0 w-1.5 origin-top bg-gradient-to-b from-[#e9c6cf] via-[#cdb4d4] to-[#f0dcae]"
+                      initial={{ scaleY: 0 }}
+                      whileInView={{ scaleY: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.15 + i * 0.1 }}
+                    />
+                    <h4 className="text-lg text-stone-700 font-bold mb-3 font-serif group-hover:text-[#9c6f81] transition-colors">{v.title}</h4>
                     <p className="text-stone-400 text-base leading-[1.8]">{v.desc}</p>
                   </motion.div>
                 ))}

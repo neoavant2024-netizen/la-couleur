@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { PageLayout } from "@/components/Layout";
 import { FloatingParticles, AmbientBlobs } from "@/components/effects";
 
-const IMG = "/images/gallery/gallery-2.webp";
+const IMG = "/images/before-after/ba-2.png";
 
 export default function MenuDeepNail() {
   return (

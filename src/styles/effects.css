@@ -184,9 +184,29 @@
   background: radial-gradient(130% 90% at 0% 0%, rgba(255, 255, 255, 0.6), transparent 46%);
 }
 
+/* ───────── ネイリストページ：プロフィール写真の回転グラデリング ───────── */
+.photo-ring {
+  background: conic-gradient(from 0deg,
+    #e9c6cf, #e7b9c8 18%, #f0dcae 40%, #cdb4d4 62%, #d9a6b6 82%, #e9c6cf);
+  animation: photo-ring-spin 9s linear infinite;
+}
+@keyframes photo-ring-spin { to { transform: rotate(360deg); } }
+
+/* ───────── 経歴タイムラインのドット（色付き＋脈動グロー） ───────── */
+.dot-pulse {
+  background: #d59ab0;
+  box-shadow: 0 0 0 0 rgba(213, 154, 176, 0.55);
+  animation: dot-pulse 2.4s ease-out infinite;
+}
+@keyframes dot-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(213, 154, 176, 0.5); }
+  70%  { box-shadow: 0 0 0 8px rgba(213, 154, 176, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(213, 154, 176, 0); }
+}
+
 /* ───────── prefers-reduced-motion 配慮 ───────── */
 @media (prefers-reduced-motion: reduce) {
-  .glossy-text, .heading-3d, .hero__blob, .amb__blob, .bubble, .tw-caret { animation: none !important; }
+  .glossy-text, .heading-3d, .hero__blob, .amb__blob, .bubble, .tw-caret, .photo-ring, .dot-pulse { animation: none !important; }
   .bubble { opacity: 0; }
   .btn-shine::after { transition: none; }
   .btn-shine:hover { transform: none; }

@@ -11,7 +11,6 @@ import {
   Tilt,
   MagneticButton,
   Counter,
-  RevealText,
   Heading3D,
   ParallaxImage,
 } from "@/components/effects";
@@ -460,20 +459,77 @@ export default function Home() {
         </motion.div>
         <FloatingBlobs />
         <div className="relative z-20 max-w-3xl mx-auto px-6 text-center">
-          <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-            <RevealText className="fluid-h2 font-bold glossy-text font-serif">
-              まずはお気軽にご相談ください
-            </RevealText>
-            <p className="text-white/65 fluid-lead leading-relaxed mt-8 mb-12">
-              爪のお悩み、何でもお聞かせください。あなたに最適な施術プランをご提案いたします。
-            </p>
-            <MagneticButton
-              href="https://lin.ee/lHrYHQF"
-              className="btn-shine inline-block bg-white text-stone-800 text-xl font-bold px-14 py-5 rounded-full shadow-2xl"
+          <div>
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-[#e9c6cf] text-sm tracking-[0.4em] mb-6"
             >
-              公式LINEで予約する
-            </MagneticButton>
-          </motion.div>
+              CONTACT
+            </motion.p>
+
+            {/* 上品なトラッキングイン（文字間が締まりながらフォーカス） */}
+            <motion.h2
+              className="fluid-h2 font-bold font-serif text-white [text-shadow:0_2px_30px_rgba(0,0,0,0.45)]"
+              initial={{ opacity: 0, y: 18, filter: "blur(12px)", letterSpacing: "0.3em" }}
+              whileInView={{ opacity: 1, y: 0, filter: "blur(0px)", letterSpacing: "0.02em" }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+            >
+              まずはお気軽にご相談ください
+            </motion.h2>
+
+            {/* 中央から左右に伸びる装飾ライン（菱形アクセント） */}
+            <div className="mt-7 flex items-center justify-center gap-3">
+              <motion.span
+                className="block h-px w-16 md:w-24 origin-right bg-gradient-to-l from-[#e9c6cf] to-transparent"
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.55 }}
+              />
+              <motion.span
+                className="block w-1.5 h-1.5 rotate-45 bg-[#e9c6cf]/80"
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+              />
+              <motion.span
+                className="block h-px w-16 md:w-24 origin-left bg-gradient-to-r from-[#e9c6cf] to-transparent"
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.55 }}
+              />
+            </div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.9, delay: 0.75 }}
+              className="text-white/65 fluid-lead leading-relaxed mt-8 mb-12"
+            >
+              爪のお悩み、何でもお聞かせください。あなたに最適な施術プランをご提案いたします。
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.95 }}
+            >
+              <MagneticButton
+                href="https://lin.ee/lHrYHQF"
+                className="btn-shine inline-block bg-white text-stone-800 text-xl font-bold px-14 py-5 rounded-full shadow-2xl"
+              >
+                公式LINEで予約する
+              </MagneticButton>
+            </motion.div>
+          </div>
         </div>
       </section>
 
