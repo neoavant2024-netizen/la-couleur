@@ -43,7 +43,7 @@ export default function AccessPage() {
                   </div>
                   <div className="flex gap-4 items-start">
                     <span className="text-stone-400 font-bold min-w-[5rem] shrink-0">ご予約</span>
-                    <span>公式LINEまたはお電話にて<br />LINE ID: @lzw0273a</span>
+                    <span>公式LINEにて<br />LINE ID: @lzw0273a</span>
                   </div>
                 </div>
                 <p className="text-stone-400 text-xs mt-6 border-t border-stone-100 pt-4">

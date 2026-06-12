@@ -30,7 +30,7 @@ export default function About() {
             </h2>
             <div className="space-y-6 text-stone-500 text-lg leading-[2]">
               <p>
-                オーナーネイリスト <strong className="text-stone-700">久佐野 可奈子</strong>。ネイリスト歴20年以上、メディカルネイルプランナーの資格を持つ、爪の育成技術を持つ特殊ネイリストです。
+                オーナーネイリスト <strong className="text-stone-700">久佐野 可奈子</strong>。ネイリスト歴20年以上、メディカルネイルプランナーという爪の育成技術を持つ特殊ネイリストです。
               </p>
               <p>
                 高校生の頃、たった数百円のネイルパーツを買いに行った時のこと。姿が見えなくなるまで見送ってくれたネイリストさんの丁寧な接客に心を打たれ、「私もあんなネイリストになりたい」と決意しました。
@@ -55,10 +55,12 @@ export default function About() {
             <div className="bg-[#edecf1] rounded-2xl p-8">
               <h3 className="text-xl text-stone-700 font-bold mb-4 font-serif">使用技術</h3>
               <ul className="space-y-3 text-stone-500 text-base">
-                <li>• ヌング育成法</li>
+                <li>• 自爪・深爪育成</li>
                 <li>• パラジェル（爪を削らない）</li>
-                <li>• フィルイン一層残し</li>
-                <li>• スカルプチャー</li>
+                <li>• 爪を傷めないフィルイン</li>
+                <li>• 長さ出し（スカルプチャー、チップジェル）</li>
+                <li>• 足の巻爪矯正</li>
+                <li>• 角質除去</li>
               </ul>
             </div>
           </motion.div>

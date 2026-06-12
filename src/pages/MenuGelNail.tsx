@@ -36,15 +36,12 @@ export default function MenuGelNail() {
                 </ul>
               </div>
 
-              <h3 className="text-xl text-stone-700 font-bold font-serif">仕上げの種類</h3>
-              <div className="grid grid-cols-3 gap-4">
-                {["マット", "ナチュラル", "クリア"].map((type) => (
-                  <div key={type} className="text-center p-6 rounded-2xl bg-pink-50 border border-stone-200">
-                    <span className="text-gray-700 text-lg font-medium">{type}</span>
-                  </div>
-                ))}
+              <p>マグネットジェルやラメなど、カラーも豊富にご用意しています。</p>
+
+              <div className="bg-[#edecf1] rounded-2xl p-8">
+                <h3 className="text-xl text-stone-700 font-bold mb-4 font-serif">得意なデザイン</h3>
+                <p className="text-base">シンプルネイルやオフィスネイル、ニュアンスネイルなど、上品で綺麗めなデザインを得意としており、ご好評をいただいています。</p>
               </div>
-              <p className="text-stone-400">お仕事で派手なネイルができない方でも、自然で美しい仕上がりをお選びいただけます。</p>
               <p className="text-stone-300 text-sm">※ 料金の詳細は公式LINEよりお問い合わせください</p>
             </div>
             <div className="mt-12 text-center">

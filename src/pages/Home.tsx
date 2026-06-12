@@ -320,10 +320,9 @@ export default function Home() {
 
           <div className="bento [perspective:1200px]">
             {[
-              { title: "自爪育成コース", desc: "トラブル爪を健康的で美しい爪へ", img: HERO_NEW, link: "/menu/nail-growth", badge: "人気No.1", span: "md:col-span-4" },
-              { title: "深爪矯正", desc: "深爪・噛み癖を改善し美しい爪へ", img: CARE, link: "/menu/deep-nail", badge: "", span: "md:col-span-2" },
-              { title: "巻爪ケア", desc: "痛みの軽減と形状改善", img: GALLERY1, link: "/menu/ingrown", badge: "", span: "md:col-span-2" },
-              { title: "ジェルネイル", desc: "爪を削らないパラジェル使用", img: GALLERY2, link: "/menu/gel-nail", badge: "", span: "md:col-span-4" },
+              { title: "自爪育成・深爪矯正", desc: "深爪・噛み癖を改善し、健康で美しい自爪へ", img: HERO_NEW, link: "/menu/nail-growth", badge: "人気No.1", span: "md:col-span-2" },
+              { title: "巻爪ケア", desc: "足の巻爪の痛みの軽減と形状改善", img: "/images/before-after/ba-4.png", link: "/menu/ingrown", badge: "", span: "md:col-span-2" },
+              { title: "ジェルネイル", desc: "爪を削らないパラジェル使用", img: GALLERY2, link: "/menu/gel-nail", badge: "", span: "md:col-span-2" },
             ].map((m, i) => (
               <motion.div
                 key={i}
