@@ -4,8 +4,8 @@ import { PageLayout } from "@/components/Layout";
 import { FloatingParticles, AmbientBlobs } from "@/components/effects";
 
 const HERO_NEW = "/images/gallery/gallery-3.webp";
-const CARE = "/images/gallery/gallery-2.webp";
-const G1 = "/images/gallery/gallery-4.webp";
+const CARE = "/images/deep-nail.png";
+const G1 = "/images/Image2.png";
 const G2 = "/images/gallery/gallery-5.webp";
 
 export default function MenuList() {
@@ -84,16 +84,17 @@ export default function MenuList() {
           <h2 className="text-2xl text-stone-700 font-bold font-serif mb-8 text-center">メニュー詳細</h2>
           <div className="space-y-8">
             {[
-              { title: "自爪育成コース", desc: "深爪・噛み癖・むしり癖・凹凸などのトラブル爪を、健康的で美しい爪へ導きます。ヌング育成法を用いた専門的なアプローチ。", img: HERO_NEW, link: "/menu/nail-growth", badge: "人気No.1" },
-              { title: "深爪矯正", desc: "長年の噛み癖やむしり癖によって短くなった爪を、自然で美しい長さと形に育てていく施術です。", img: CARE, link: "/menu/deep-nail", badge: "" },
-              { title: "巻爪ケア", desc: "足の巻爪に対する専門的なケア。痛みの軽減と爪の形状改善を目指します。", img: G1, link: "/menu/ingrown", badge: "" },
-              { title: "ジェルネイル（パラジェル）", desc: "爪を削らないパラジェル使用。フィルイン一層残しで自爪を傷めない施術。マット・ナチュラル・クリアから選べます。", img: G2, link: "/menu/gel-nail", badge: "" },
+              { title: "自爪育成コース", desc: "深爪・噛み癖・むしり癖・凹凸などのトラブル爪を、健康的で美しい爪へ導きます。ヌング育成法を用いた専門的なアプローチ。", img: HERO_NEW, link: "/menu/nail-growth", badge: "人気No.1", note: "" },
+              { title: "深爪矯正", desc: "長年の噛み癖やむしり癖によって短くなった爪を、自然で美しい長さと形に育てていく施術です。", img: CARE, link: "/menu/deep-nail", badge: "", note: "※写真は本部からお借りしています" },
+              { title: "巻爪ケア", desc: "足の巻爪に対する専門的なケア。痛みの軽減と爪の形状改善を目指します。", img: G1, link: "/menu/ingrown", badge: "", note: "" },
+              { title: "ジェルネイル（パラジェル）", desc: "爪を削らないパラジェル使用。フィルイン一層残しで自爪を傷めない施術。マット・ナチュラル・クリアから選べます。", img: G2, link: "/menu/gel-nail", badge: "", note: "" },
             ].map((m, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: i * 0.1 }}>
                 <Link href={m.link} className="group block md:grid md:grid-cols-[1fr_1.5fr] gap-8 items-center bg-white rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-stone-100/40 transition-all duration-500 hover:-translate-y-1 border border-stone-100">
-                  <div className="aspect-[16/10] md:aspect-auto md:h-full overflow-hidden">
+                  <div className="relative aspect-[16/10] md:aspect-auto md:h-full overflow-hidden">
                     <img src={m.img} alt={m.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    {m.note && <span className="absolute bottom-2 right-3 text-white/85 text-[10px] [text-shadow:0_1px_3px_rgba(0,0,0,0.75)]">{m.note}</span>}
                   </div>
                   <div className="p-8 md:p-10">
                     {m.badge && <span className="inline-block bg-stone-400 text-white text-xs px-4 py-1.5 rounded-full mb-4">{m.badge}</span>}
