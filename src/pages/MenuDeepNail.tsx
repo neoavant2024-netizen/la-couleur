@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { PageLayout } from "@/components/Layout";
 import { FloatingParticles, AmbientBlobs } from "@/components/effects";
 
-const IMG = "/images/before-after/ba-2.png";
+const IMG = "/images/deep-nail.png";
 
 export default function MenuDeepNail() {
   return (
@@ -16,6 +16,7 @@ export default function MenuDeepNail() {
             <h1 className="text-white text-4xl md:text-6xl font-bold font-serif text-glow">深爪矯正</h1>
           </motion.div>
         </div>
+        <p className="absolute bottom-3 right-4 z-10 text-white/75 text-xs [text-shadow:0_1px_4px_rgba(0,0,0,0.7)]">※写真は本部からお借りしています</p>
       </section>
 
       <section className="py-20 md:py-28 bg-white relative overflow-hidden">

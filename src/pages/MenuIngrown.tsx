@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { PageLayout } from "@/components/Layout";
 import { FloatingParticles, AmbientBlobs } from "@/components/effects";
 
-const IMG = "/images/before-after/ba-4.png";
+const IMG = "/images/Image2.png";
 
 export default function MenuIngrown() {
   return (
