@@ -32,7 +32,6 @@ export default function MenuGelNail() {
                   <li>• 爪を削らないから自爪が傷まない</li>
                   <li>• 持ちが良く、約3〜4週間キープ</li>
                   <li>• フィルイン一層残しで付け替え時もダメージレス</li>
-                  <li>• 発色が良く、豊富なカラーバリエーション</li>
                 </ul>
               </div>
 
