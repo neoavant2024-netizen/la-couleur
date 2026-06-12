@@ -34,7 +34,7 @@ export function Nav() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled || location !== "/" ? "bg-white/90 backdrop-blur-xl shadow-sm" : ""}`}
       >
         <div className="max-w-[1440px] mx-auto flex justify-between items-center px-6 md:px-10 py-4">
-          <Link href="/" className="flex items-center"><img src="/la-couleur/images/logo.png" alt="la couleur" className="h-12 md:h-14" /></Link>
+          <Link href="/" className="flex items-center"><img src="/images/logo.png" alt="la couleur" className="h-12 md:h-14" /></Link>
           <nav className="hidden lg:flex items-center gap-7">
             {links.map((l) => (
               <Link key={l.href} href={l.href}
@@ -76,7 +76,7 @@ export function Footer() {
     <footer className="bg-[#e7e7ec] text-stone-600 py-16 px-6 md:px-10 border-t border-stone-300/70">
       <div className="max-w-[1440px] mx-auto grid md:grid-cols-3 gap-10">
         <div>
-          <img src="/la-couleur/images/logo.png" alt="la couleur" className="h-10" />
+          <img src="/images/logo.png" alt="la couleur" className="h-10" />
           <p className="text-stone-600 text-sm mt-3">爪の育成サロン ラ クルール</p>
           <p className="text-stone-500 text-sm mt-4 leading-relaxed">
             〒321-0941 栃木県宇都宮市東今泉2丁目5-5<br />TEL: 070-6948-1551

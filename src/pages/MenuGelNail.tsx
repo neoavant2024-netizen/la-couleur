@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { PageLayout } from "@/components/Layout";
 import { FloatingParticles, AmbientBlobs } from "@/components/effects";
 
-const IMG = "/la-couleur/images/gallery/gallery-5.webp";
+const IMG = "/images/gallery/gallery-5.webp";
 
 export default function MenuGelNail() {
   return (

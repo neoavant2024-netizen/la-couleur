@@ -4,9 +4,9 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "node:path";
 
 export default defineConfig({
-  // GitHub Pages（プロジェクトサイト）配信用のベースパス。
-  // 独自ドメイン（ルート配信）に切り替える際は "/" に戻す。
-  base: "/la-couleur/",
+  // 独自ドメイン（leblanc-nailsalon.com）でルート配信。
+  // github.io のサブパス配信に戻す場合は "/la-couleur/"。
+  base: "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

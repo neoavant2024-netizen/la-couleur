@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { PageLayout } from "@/components/Layout";
 import { FloatingParticles, AmbientBlobs } from "@/components/effects";
 
-const SALON = "/la-couleur/images/salon-interior-2.webp";
+const SALON = "/images/salon-interior-2.webp";
 
 export default function About() {
   return (

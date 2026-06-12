@@ -4,27 +4,27 @@ import { FloatingParticles, AmbientBlobs } from "@/components/effects";
 
 /* ビフォーアフター画像（1枚にBefore/Afterが含まれる形式） */
 const BA_IMAGES = [
-  "/la-couleur/images/before-after/ba-1.png",
-  "/la-couleur/images/before-after/ba-2.png",
-  "/la-couleur/images/before-after/ba-3.png",
-  "/la-couleur/images/before-after/ba-4.png",
-  "/la-couleur/images/before-after/ba-5.png",
-  "/la-couleur/images/before-after/ba-6.png",
-  "/la-couleur/images/before-after/ba-7.webp",
-  "/la-couleur/images/before-after/ba-8.webp",
-  "/la-couleur/images/before-after/ba-9.webp",
-  "/la-couleur/images/before-after/ba-10.webp",
-  "/la-couleur/images/before-after/ba-11.webp",
+  "/images/before-after/ba-1.png",
+  "/images/before-after/ba-2.png",
+  "/images/before-after/ba-3.png",
+  "/images/before-after/ba-4.png",
+  "/images/before-after/ba-5.png",
+  "/images/before-after/ba-6.png",
+  "/images/before-after/ba-7.webp",
+  "/images/before-after/ba-8.webp",
+  "/images/before-after/ba-9.webp",
+  "/images/before-after/ba-10.webp",
+  "/images/before-after/ba-11.webp",
 ];
 
 /* 施術後写真（ビフォーアフターとは別） */
 const GALLERY_IMAGES = [
-  "/la-couleur/images/gallery/gallery-1.webp",
-  "/la-couleur/images/gallery/gallery-2.webp",
-  "/la-couleur/images/gallery/gallery-3.webp",
-  "/la-couleur/images/gallery/gallery-4.webp",
-  "/la-couleur/images/gallery/gallery-5.webp",
-  "/la-couleur/images/gallery/gallery-6.webp",
+  "/images/gallery/gallery-1.webp",
+  "/images/gallery/gallery-2.webp",
+  "/images/gallery/gallery-3.webp",
+  "/images/gallery/gallery-4.webp",
+  "/images/gallery/gallery-5.webp",
+  "/images/gallery/gallery-6.webp",
 ];
 
 export default function GalleryPage() {

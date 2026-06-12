@@ -15,21 +15,21 @@ import {
   ParallaxImage,
 } from "@/components/effects";
 
-const HERO = "/la-couleur/images/gallery/gallery-1.webp";
-const CARE = "/la-couleur/images/gallery/gallery-2.webp";
-const HERO_NEW = "/la-couleur/images/gallery/gallery-3.webp";
-const GALLERY1 = "/la-couleur/images/gallery/gallery-4.webp";
-const GALLERY2 = "/la-couleur/images/gallery/gallery-5.webp";
-const SALON = "/la-couleur/images/salon-interior-2.webp";
+const HERO = "/images/gallery/gallery-1.webp";
+const CARE = "/images/gallery/gallery-2.webp";
+const HERO_NEW = "/images/gallery/gallery-3.webp";
+const GALLERY1 = "/images/gallery/gallery-4.webp";
+const GALLERY2 = "/images/gallery/gallery-5.webp";
+const SALON = "/images/salon-interior-2.webp";
 
 const HERO_SLIDES = [HERO, CARE, HERO_NEW, GALLERY1, GALLERY2];
 const GALLERY_PREVIEW = [
-  "/la-couleur/images/gallery/gallery-1.webp",
-  "/la-couleur/images/gallery/gallery-2.webp",
-  "/la-couleur/images/gallery/gallery-3.webp",
-  "/la-couleur/images/gallery/gallery-4.webp",
-  "/la-couleur/images/gallery/gallery-5.webp",
-  "/la-couleur/images/gallery/gallery-6.webp",
+  "/images/gallery/gallery-1.webp",
+  "/images/gallery/gallery-2.webp",
+  "/images/gallery/gallery-3.webp",
+  "/images/gallery/gallery-4.webp",
+  "/images/gallery/gallery-5.webp",
+  "/images/gallery/gallery-6.webp",
 ];
 
 export default function Home() {
@@ -320,7 +320,7 @@ export default function Home() {
           <div className="bento [perspective:1200px]">
             {[
               { title: "自爪育成・深爪矯正", desc: "深爪・噛み癖を改善し、健康で美しい自爪へ", img: HERO_NEW, link: "/menu/nail-growth", badge: "人気No.1", span: "md:col-span-2" },
-              { title: "巻爪ケア", desc: "足の巻爪の痛みの軽減と形状改善", img: "/la-couleur/images/before-after/ba-4.png", link: "/menu/ingrown", badge: "", span: "md:col-span-2" },
+              { title: "巻爪ケア", desc: "足の巻爪の痛みの軽減と形状改善", img: "/images/before-after/ba-4.png", link: "/menu/ingrown", badge: "", span: "md:col-span-2" },
               { title: "ジェルネイル", desc: "爪を削らないパラジェル使用", img: GALLERY2, link: "/menu/gel-nail", badge: "", span: "md:col-span-2" },
             ].map((m, i) => (
               <motion.div

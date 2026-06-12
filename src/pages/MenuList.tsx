@@ -3,10 +3,10 @@ import { Link } from "wouter";
 import { PageLayout } from "@/components/Layout";
 import { FloatingParticles, AmbientBlobs } from "@/components/effects";
 
-const HERO_NEW = "/la-couleur/images/gallery/gallery-3.webp";
-const CARE = "/la-couleur/images/deep-nail.png";
-const G1 = "/la-couleur/images/Image2.png";
-const G2 = "/la-couleur/images/gallery/gallery-5.webp";
+const HERO_NEW = "/images/gallery/gallery-3.webp";
+const CARE = "/images/deep-nail.png";
+const G1 = "/images/Image2.png";
+const G2 = "/images/gallery/gallery-5.webp";
 
 export default function MenuList() {
   return (
