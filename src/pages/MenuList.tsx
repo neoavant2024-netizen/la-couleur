@@ -87,7 +87,7 @@ export default function MenuList() {
               { title: "自爪育成コース", desc: "深爪・噛み癖・むしり癖・凹凸などのトラブル爪を、健康的で美しい爪へ導きます。ヌング育成法を用いた専門的なアプローチ。", img: HERO_NEW, link: "/menu/nail-growth", badge: "人気No.1", note: "" },
               { title: "深爪矯正", desc: "長年の噛み癖やむしり癖によって短くなった爪を、自然で美しい長さと形に育てていく施術です。", img: CARE, link: "/menu/deep-nail", badge: "", note: "※写真は本部からお借りしています" },
               { title: "巻爪ケア", desc: "足の巻爪に対する専門的なケア。痛みの軽減と爪の形状改善を目指します。", img: G1, link: "/menu/ingrown", badge: "", note: "" },
-              { title: "ジェルネイル（パラジェル）", desc: "爪を削らないパラジェル使用。フィルイン一層残しで自爪を傷めない施術。マット・ナチュラル・クリアから選べます。", img: G2, link: "/menu/gel-nail", badge: "", note: "" },
+              { title: "ジェルネイル", desc: "爪を削らないパラジェル使用。フィルイン一層残しで自爪を傷めない施術。マット・ナチュラル・クリアから選べます。", img: G2, link: "/menu/gel-nail", badge: "", note: "" },
             ].map((m, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: i * 0.1 }}>
