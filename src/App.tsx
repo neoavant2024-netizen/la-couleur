@@ -1,4 +1,4 @@
-import { Route, Switch } from "wouter";
+import { Route, Switch, Router } from "wouter";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import NailistPage from "./pages/NailistPage";
@@ -14,6 +14,7 @@ import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
+    <Router base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
@@ -28,5 +29,6 @@ export default function App() {
       <Route path="/contact" component={ContactPage} />
       <Route component={NotFound} />
     </Switch>
+    </Router>
   );
 }

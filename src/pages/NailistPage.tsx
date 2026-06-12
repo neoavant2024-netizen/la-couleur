@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { PageLayout } from "@/components/Layout";
 import { FloatingParticles, AmbientBlobs } from "@/components/effects";
 
-const SALON = "/images/salon-interior-2.webp";
+const SALON = "/la-couleur/images/salon-interior-2.webp";
 
 export default function NailistPage() {
   return (
@@ -31,7 +31,7 @@ export default function NailistPage() {
               <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto mb-8">
                 <div className="photo-ring absolute -inset-[6px] rounded-full" />
                 <div className="absolute inset-0 rounded-full overflow-hidden border-4 border-white shadow-xl">
-                  <img src="/images/nailist-profile.png" alt="久佐野 可奈子" className="w-full h-full object-cover object-top" />
+                  <img src="/la-couleur/images/nailist-profile.png" alt="久佐野 可奈子" className="w-full h-full object-cover object-top" />
                 </div>
               </div>
               <p className="text-[#b58aa0] text-sm tracking-[0.3em] mb-3">OWNER NAILIST</p>
