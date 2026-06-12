@@ -91,9 +91,9 @@ export default function MenuList() {
             ].map((m, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: i * 0.1 }}>
-                <Link href={m.link} className="group block md:grid md:grid-cols-[1fr_1.5fr] gap-8 items-center bg-white rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-stone-100/40 transition-all duration-500 hover:-translate-y-1 border border-stone-100">
-                  <div className="relative aspect-[16/10] md:aspect-auto md:h-full overflow-hidden">
-                    <img src={m.img} alt={m.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <Link href={m.link} className="group block md:grid md:grid-cols-[1fr_1.5fr] gap-8 items-stretch bg-white rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-stone-100/40 transition-all duration-500 hover:-translate-y-1 border border-stone-100">
+                  <div className="relative aspect-[16/10] md:aspect-auto overflow-hidden">
+                    <img src={m.img} alt={m.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     {m.note && <span className="absolute bottom-2 right-3 text-white/85 text-[10px] [text-shadow:0_1px_3px_rgba(0,0,0,0.75)]">{m.note}</span>}
                   </div>
                   <div className="p-8 md:p-10">
